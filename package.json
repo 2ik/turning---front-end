@@ -1,12 +1,12 @@
 {
   "name": "optimizedhtml",
   "version": "4.1.0",
-  "description": "OptimizedHTML 4 - Start HTML Template",
+  "description": "Start HTML Template",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "WebDesign Master",
+  "author": "Kotlyakov Ilya",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.23.7",
