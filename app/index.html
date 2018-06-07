@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Main</title>
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#005dbd">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#005dbd">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#005dbd">
+	
+	<meta name="description" content="">
+	<meta name="keywords" content="">	
+	<meta property="og:site_name" content="" />
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:url" content="" />
+	
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="position:absolute">
+		<defs>
+			<symbol id="svg-icon-tel" viewBox="0 0 11 11">
+				<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+				d="M10.994,8.678 C11.018,8.858 10.963,9.012 10.831,9.144 L9.283,10.684 C9.213,10.762 9.122,10.827 9.009,10.881 C8.896,10.935 8.786,10.971 8.677,10.986 C8.669,10.986 8.646,10.987 8.607,10.991 C8.568,10.995 8.518,10.997 8.456,10.997 C8.308,10.997 8.070,10.973 7.740,10.922 C7.410,10.871 7.006,10.747 6.529,10.549 C6.051,10.351 5.510,10.054 4.904,9.657 C4.299,9.262 3.654,8.718 2.971,8.026 C2.428,7.491 1.977,6.977 1.620,6.488 C1.263,5.999 0.976,5.546 0.759,5.130 C0.541,4.714 0.378,4.338 0.270,4.000 C0.161,3.662 0.087,3.371 0.048,3.127 C0.010,2.881 -0.006,2.689 0.002,2.549 C0.010,2.410 0.013,2.332 0.013,2.316 C0.029,2.208 0.064,2.097 0.118,1.984 C0.172,1.871 0.239,1.781 0.316,1.710 L1.865,0.160 C1.974,0.052 2.098,-0.002 2.237,-0.002 C2.338,-0.002 2.428,0.027 2.505,0.085 C2.583,0.143 2.649,0.215 2.703,0.301 L3.949,2.666 C4.019,2.789 4.039,2.927 4.008,3.074 C3.977,3.222 3.910,3.345 3.810,3.446 L3.239,4.017 C3.223,4.034 3.210,4.058 3.198,4.093 C3.187,4.129 3.181,4.158 3.181,4.181 C3.212,4.343 3.282,4.531 3.390,4.741 C3.483,4.926 3.627,5.154 3.821,5.422 C4.015,5.689 4.291,5.999 4.648,6.348 C4.997,6.706 5.308,6.984 5.580,7.181 C5.851,7.380 6.078,7.526 6.261,7.618 C6.443,7.711 6.583,7.768 6.680,7.787 L6.826,7.817 C6.841,7.817 6.866,7.811 6.901,7.798 C6.936,7.787 6.961,7.773 6.977,7.759 L7.641,7.082 C7.781,6.958 7.943,6.895 8.130,6.895 C8.262,6.895 8.367,6.919 8.444,6.966 L8.456,6.966 L10.703,8.294 C10.866,8.395 10.963,8.522 10.994,8.678 Z"/>
+			</symbol>
+			<symbol id="svg-icon-pdf" viewBox="0 0 32 23">
+				<path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+				d="M3.000,1.000 L29.000,1.000 C30.105,1.000 31.000,1.895 31.000,3.000 L31.000,20.000 C31.000,21.104 30.105,22.000 29.000,22.000 L3.000,22.000 C1.895,22.000 1.000,21.104 1.000,20.000 L1.000,3.000 C1.000,1.895 1.895,1.000 3.000,1.000 Z"/>
+				<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+				d="M22.348,8.896 L22.348,10.648 L24.802,10.648 L24.802,11.834 L22.348,11.834 L22.348,14.896 L20.886,14.896 L20.886,7.681 L24.925,7.681 L24.925,8.896 L22.348,8.896 ZM18.258,14.317 C17.845,14.556 17.429,14.712 17.008,14.786 C16.588,14.859 16.176,14.896 15.771,14.896 L13.494,14.896 L13.494,7.681 L15.771,7.681 C16.159,7.681 16.553,7.712 16.954,7.775 C17.355,7.838 17.768,7.986 18.194,8.218 C18.619,8.450 18.977,8.817 19.266,9.318 C19.555,9.819 19.700,10.475 19.700,11.288 C19.700,12.075 19.563,12.717 19.289,13.214 C19.014,13.711 18.671,14.079 18.258,14.317 ZM18.022,10.360 C17.934,10.013 17.716,9.683 17.366,9.368 C17.016,9.054 16.491,8.896 15.792,8.896 L14.956,8.896 L14.956,13.681 L15.792,13.681 C16.491,13.681 17.016,13.523 17.366,13.209 C17.716,12.894 17.934,12.564 18.022,12.217 C18.109,11.871 18.152,11.561 18.152,11.288 C18.152,11.015 18.109,10.706 18.022,10.360 ZM11.234,11.865 C10.855,12.079 10.395,12.186 9.855,12.186 L8.916,12.186 L8.916,14.896 L7.453,14.896 L7.453,7.681 L9.588,7.681 C10.648,7.681 11.375,7.922 11.769,8.404 C12.162,8.887 12.359,9.398 12.359,9.938 C12.359,10.321 12.266,10.684 12.081,11.028 C11.895,11.372 11.613,11.651 11.234,11.865 ZM10.518,9.124 C10.321,8.917 10.011,8.814 9.588,8.814 L8.916,8.814 L8.916,11.051 L9.588,11.051 C9.975,11.051 10.277,10.940 10.491,10.719 C10.706,10.497 10.813,10.223 10.813,9.896 C10.813,9.589 10.715,9.331 10.518,9.124 Z"/>
+			</symbol>
+			<symbol id="svg-icon-geo" viewBox="0 0 10 14">
+				<path fill-rule="evenodd"  fill="rgb(0, 93, 189)"
+				d="M5.000,-0.002 C2.243,-0.002 -0.000,2.270 -0.000,5.064 C-0.000,8.530 4.474,13.618 4.665,13.834 C4.844,14.035 5.156,14.035 5.335,13.834 C5.525,13.618 10.000,8.530 10.000,5.064 C10.000,2.270 7.757,-0.002 5.000,-0.002 ZM5.000,7.612 C3.613,7.612 2.484,6.469 2.484,5.064 C2.484,3.659 3.613,2.515 5.000,2.515 C6.387,2.515 7.516,3.659 7.516,5.064 C7.516,6.469 6.387,7.612 5.000,7.612 Z"/>
+			</symbol>
+			<symbol id="svg-icon-close" viewBox="0 0 15.75 17">
+				<path fill-rule="evenodd"  fill="rgb(0, 93, 189)"
+				d="M0.636,3.464 L3.464,0.635 L16.364,13.535 L13.535,16.362 L0.636,3.464 Z"/>
+				<path fill-rule="evenodd"  fill="rgb(0, 93, 189)"
+				d="M16.364,3.464 L13.535,0.635 L0.636,13.535 L3.464,16.362 L16.364,3.464 Z"/>
+			</symbol>
+			<symbol id="svg-icon-lock" viewBox="0 0 14 17">
+				<path fill-rule="evenodd"  fill="rgb(191, 191, 191)"
+				d="M11.941,16.999 L2.059,16.999 C0.924,16.999 0.000,16.106 0.000,15.008 L0.000,8.234 C0.000,7.136 0.924,6.242 2.059,6.242 L3.293,6.242 L3.293,3.512 C3.293,1.574 4.955,-0.001 6.999,-0.001 C9.042,-0.001 10.705,1.574 10.705,3.512 L10.705,6.242 L11.941,6.242 C13.076,6.242 14.000,7.136 14.000,8.234 L14.000,15.008 C14.000,16.106 13.076,16.999 11.941,16.999 ZM9.332,3.512 C9.332,2.307 8.285,1.327 6.999,1.327 C5.712,1.327 4.665,2.307 4.665,3.512 L4.665,6.242 L9.332,6.242 L9.332,3.512 ZM12.627,8.234 C12.627,7.868 12.320,7.570 11.941,7.570 L2.059,7.570 C1.680,7.570 1.372,7.868 1.372,8.234 L1.372,15.008 C1.372,15.374 1.680,15.671 2.059,15.671 L11.941,15.671 C12.320,15.671 12.627,15.374 12.627,15.008 L12.627,8.234 ZM7.685,11.758 L7.685,13.214 C7.685,13.581 7.378,13.878 6.999,13.878 C6.620,13.878 6.312,13.581 6.312,13.214 L6.312,11.756 C5.962,11.538 5.730,11.157 5.730,10.724 C5.730,10.045 6.299,9.496 7.000,9.496 C7.701,9.496 8.270,10.045 8.270,10.724 C8.270,11.158 8.036,11.539 7.685,11.758 Z"/>
+			</symbol>
+			<symbol id="svg-icon-mail" viewBox="0 0 23.125 17">
+				<path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+				d="M4.031,1.000 L20.969,1.000 C22.073,1.000 22.969,1.895 22.969,3.000 L22.969,14.000 C22.969,15.104 22.073,16.000 20.969,16.000 L4.031,16.000 C2.927,16.000 2.031,15.104 2.031,14.000 L2.031,3.000 C2.031,1.895 2.927,1.000 4.031,1.000 Z"/>
+				<path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+				d="M3.000,2.000 L11.803,7.428 C11.803,7.428 12.344,7.905 13.197,7.428 C14.050,6.950 22.000,2.000 22.000,2.000 "/>
+			</symbol>
+			<symbol id="svg-icon-warehouse" viewBox="0 0 41 36">
+				<path fill-rule="evenodd"  fill="rgb(0, 93, 189)"
+				d="M20.500,-0.002 L-0.000,9.284 L-0.000,35.999 L41.000,35.999 L41.000,9.284 L20.500,-0.002 ZM19.299,33.617 L12.020,33.617 L12.020,27.982 L14.458,27.982 L14.458,30.367 L16.861,30.367 L16.861,27.982 L19.299,27.982 L19.299,33.617 L19.299,33.617 ZM16.861,25.601 L16.861,19.965 L19.299,19.965 L19.299,22.350 L21.701,22.350 L21.701,19.965 L24.139,19.965 L24.139,25.601 L21.701,25.601 L19.299,25.601 L16.861,25.601 ZM28.980,33.617 L21.701,33.617 L21.701,27.982 L24.139,27.982 L24.139,30.367 L26.542,30.367 L26.542,27.982 L28.980,27.982 L28.980,33.617 L28.980,33.617 ZM33.789,33.617 L31.382,33.617 L31.382,25.601 L26.542,25.601 L26.542,17.583 L14.458,17.583 L14.458,25.601 L9.617,25.601 L9.617,33.617 L7.211,33.617 L7.211,15.198 L33.789,15.198 L33.789,33.617 ZM38.598,33.617 L36.191,33.617 L36.191,12.816 L4.809,12.816 L4.809,33.617 L2.402,33.617 L2.402,10.813 L20.500,2.618 L38.598,10.813 L38.598,33.617 Z"/>
+			</symbol>
+			<symbol id="svg-icon-truck" viewBox="0 0 54 32">
+				<path fill-rule="evenodd"  fill="rgb(0, 93, 189)"
+				d="M52.520,27.680 L48.210,27.680 C47.540,30.169 45.230,32.000 42.500,32.000 C39.760,32.000 37.450,30.169 36.780,27.689 L20.970,27.689 C20.300,30.169 17.990,32.000 15.260,32.000 C12.520,32.000 10.210,30.169 9.540,27.689 L5.680,27.689 C4.860,27.689 4.200,27.030 4.200,26.229 C4.200,25.430 4.860,24.780 5.680,24.780 L9.510,24.780 C10.150,22.240 12.480,20.360 15.260,20.360 C18.030,20.360 20.360,22.240 21.000,24.780 L36.750,24.780 C37.390,22.240 39.720,20.360 42.500,20.360 C45.270,20.360 47.600,22.240 48.240,24.780 L51.040,24.780 L51.040,17.270 L48.880,14.550 L37.360,14.550 C36.540,14.550 35.880,13.890 35.880,13.090 L35.880,2.910 L5.680,2.910 C4.860,2.910 4.200,2.260 4.200,1.450 C4.200,0.649 4.860,-0.001 5.680,-0.001 L37.360,-0.001 C38.180,-0.001 38.840,0.649 38.840,1.450 L38.840,2.910 L45.160,2.910 C45.720,2.910 46.230,3.219 46.490,3.710 L50.930,12.390 L53.690,15.879 C53.890,16.140 54.000,16.450 54.000,16.769 L54.000,26.229 C54.000,27.030 53.340,27.680 52.520,27.680 ZM15.260,23.270 C13.620,23.270 12.290,24.580 12.290,26.180 L12.290,26.229 C12.320,27.819 13.640,29.089 15.260,29.089 C16.890,29.089 18.220,27.790 18.220,26.180 C18.220,24.580 16.890,23.270 15.260,23.270 ZM45.460,26.180 C45.460,24.580 44.130,23.270 42.500,23.270 C40.860,23.270 39.530,24.580 39.530,26.180 C39.530,27.790 40.860,29.089 42.500,29.089 C44.110,29.089 45.430,27.819 45.460,26.229 L45.460,26.180 ZM44.250,5.820 L38.840,5.820 L38.840,11.639 L47.230,11.639 L44.250,5.820 ZM18.020,7.420 C18.020,8.219 17.360,8.870 16.540,8.870 L3.900,8.870 C3.080,8.870 2.420,8.219 2.420,7.420 C2.420,6.610 3.080,5.960 3.900,5.960 L16.540,5.960 C17.360,5.960 18.020,6.610 18.020,7.420 ZM15.600,13.140 C15.600,13.939 14.940,14.589 14.120,14.589 L1.480,14.589 C0.660,14.589 -0.000,13.939 -0.000,13.140 C-0.000,12.339 0.660,11.680 1.480,11.680 L14.120,11.680 C14.940,11.680 15.600,12.339 15.600,13.140 ZM3.900,17.410 L10.710,17.410 C11.530,17.410 12.190,18.060 12.190,18.859 C12.190,19.660 11.530,20.319 10.710,20.319 L3.900,20.319 C3.080,20.319 2.420,19.660 2.420,18.859 C2.420,18.060 3.080,17.410 3.900,17.410 Z"/>
+			</symbol>
+			<symbol id="svg-icon-rub" viewBox="0 0 9.69 13.56">
+				<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+				d="M7.149,11.896 L7.149,10.318 L3.679,10.318 L3.679,8.995 L4.982,8.995 C8.232,8.995 9.775,7.435 9.775,4.956 C9.775,2.495 8.232,0.861 4.982,0.861 L1.696,0.861 L1.696,7.288 L0.098,7.288 L0.098,8.995 L1.696,8.995 L1.696,10.318 L0.098,10.318 L0.098,11.896 L1.696,11.896 L1.696,14.448 L3.679,14.448 L3.679,11.896 L7.149,11.896 ZM3.679,2.678 L4.982,2.678 C7.241,2.678 7.792,3.836 7.792,4.919 C7.792,6.003 7.241,7.288 4.982,7.288 L3.679,7.288 L3.679,2.678 Z"/>
+			</symbol>
+			<symbol id="svg-icon-ar-left" viewBox="0 0 11 18">
+				<path fill-rule="evenodd" fill="rgb(0, 93, 189)" d="M1.368 8.438l7.071-7.071a1.502 1.502 0 0 1 2.122 0 1.502 1.502 0 0 1 0 2.122l-7.071 7.07a1.5 1.5 0 0 1-2.122-2.121z"/><path fill-rule="evenodd" fill="rgb(0, 93, 189)" d="M1.368 8.438a1.5 1.5 0 0 1 2.122 0l7.071 7.071a1.502 1.502 0 0 1 0 2.122 1.502 1.502 0 0 1-2.122 0l-7.071-7.072a1.5 1.5 0 0 1 0-2.121z"/>
+			</symbol>
+			<symbol id="svg-icon-ar-right" viewBox="0 0 11 18">
+				<path fill-rule="evenodd" fill="rgb(0, 93, 189)" d="M9.632 8.438L2.561 1.367a1.502 1.502 0 0 0-2.122 0 1.502 1.502 0 0 0 0 2.122l7.071 7.07a1.5 1.5 0 0 0 2.122-2.121z"/><path fill-rule="evenodd" fill="rgb(0, 93, 189)" d="M9.632 8.438a1.5 1.5 0 0 0-2.122 0L.439 15.509a1.502 1.502 0 0 0 0 2.122 1.502 1.502 0 0 0 2.122 0l7.071-7.072a1.5 1.5 0 0 0 0-2.121z"/>
+			</symbol>
+			
+		</defs>
+	</svg>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-1 logo">
+					<!-- <a href="/"> --><img src="img/logo.png" alt="" /><!-- </a> -->
+				</div>
+				<div class="col-xs-6"></div>
+				<div class="col-xs-3 callback text-right">
+					<button class="btn btn-blue" data-toggle="modal" data-target="#modal_1">
+						<svg class="svg-icon-tel">
+							<use xlink:href="#svg-icon-tel"></use>
+						</svg>  
+					Заказать звонок</button>
+				</div>
+				<div class="col-xs-2 tel">
+					<a href="tel:+73412249599">+ 7 (3412) 249-599</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="block-one-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<h1>Ремонт и техобслуживание промышленных тепловозов серии ТЭМ2 и ТЭМ18</h1>
+					<ul>
+						<li>Выездная бригада для ремонта и тех. обслуживания на вашей территории</li>
+						<li>Собственное локомотивное депо в г. Чайковский</li>
+						<li>Имеется сертификат соответствияи условный номер клеймения</li>
+						<li>Возможна отсрочка платежа до 60 дней</li>
+					</ul>
+					<h2>Какие работы вам необходимы?</h2>
+				</div>
+				<div class="col-xs-6">
+					<img 
+					src="img/train.png" 
+					alt="" 
+					data-aos="fade-left" 
+					data-aos-duration="1300"    
+					data-aos-easing="ease-in-sine">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="list-work-section" data-aos="flip-up">
+		<div class="container">
+			<div class="col-xs-3" data-toggle="modal" data-target="#modal_4">
+				<div class="item">
+					<h3>ТО-3</h3>
+					<p>выездной ремонт</p>
+				</div>
+			</div>
+			<div class="col-xs-3" data-toggle="modal" data-target="#modal_4">
+				<div class="item">
+					<h3>ТО-3</h3>
+					<p>выездной ремонт</p>
+				</div>
+			</div>
+			<div class="col-xs-3" data-toggle="modal" data-target="#modal_4">
+				<div class="item">
+					<h3>ТО-3</h3>
+					<p>выездной ремонт</p>
+				</div>
+			</div>
+			<div class="col-xs-3" data-toggle="modal" data-target="#modal_4">
+				<div class="item">
+					<h3>ТО-3</h3>
+					<p>выездной ремонт</p>
+				</div>
+			</div>
+			<div class="col-xs-3" data-toggle="modal" data-target="#modal_4">
+				<div class="item">
+					<h3>ТО-3</h3>
+					<p>выездной ремонт</p>
+				</div>
+			</div>
+			<div class="col-xs-3" data-toggle="modal" data-target="#modal_4">
+				<div class="item">
+					<h3>ТО-3</h3>
+					<p>выездной ремонт</p>
+				</div>
+			</div>
+			<div class="col-xs-3" data-toggle="modal" data-target="#modal_4">
+				<div class="item">
+					<h3>ТО-3</h3>
+					<p>выездной ремонт</p>
+				</div>
+			</div>
+			<div class="col-xs-3" data-toggle="modal" data-target="#modal_4">
+				<div class="item">
+					<h3>ТО-3</h3>
+					<p>выездной ремонт</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="about-section">
+		<div class="container">
+			<div class="row">
+				<div class="section-title col-xs-8">
+					<h2>ТРК «ПРОГРЕСС» — ответственный исполнитель и надежный партнер</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-6">
+					<div class="item" data-aos="fade-left">
+						<img src="img/icons/worker-icon.svg" alt="" class="hvr-pop">
+						<h3>Большой опыт, компетентный штат</h3>
+						<p>За 5 лет работы мы восстановили несколько десятков локомотивов, продлили их срок службы. Благодаря штату из 40 опытных специалистов и наличию современного оборудования мы выполняем работы любой сложности в краткие сроки. </p>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="item" data-aos="fade-right">
+						<img src="img/icons/gears-icon.svg" alt="" class="hvr-pop">
+						<h3>Современное оборудование</h3>
+						<p>За 2017 год мы приобрели более 40 единиц оборудования для ремонта подвижного состава. Наше инженерно-техническое бюро постоянно разрабатывает новые приспособления, стенды и станки для диагностики и </p>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="item" data-aos="fade-left">
+						<img src="img/icons/depot-icon.svg" alt="" class="hvr-pop">
+						<h3>Свой ремонтно-технический комплекс и выездная команда</h3>
+						<p>Ремонты по циклам от Т.Р-2 до КР-2 мы проводим в специально оборудованном депо. Для ремонтов по циклам от ТО-3 до ТР-1 отправляем к вам выездную команду специалистов.</p>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="item" data-aos="fade-right">
+						<img src="img/icons/certificate-icon.svg" alt="" class="hvr-pop">
+						<h3>Все необходимые документы и сертификаты</h3>
+						<p>Деятельность компании признана и сертифицирована Федеральным агентством железнодорожного транспорта. ТРК “ПРОГРЕСС” также имеет условный номер клеймения, поэтому у нас вы можете ремонтировать локомотивы, предназначенные для выхода на РЖД. </p>
+					</div>
+				</div>
+				<div class="col-xs-4">
+					<button class="btn btn-blue download-pdf">
+						<svg class="svg-icon-pdf" ><use xlink:href="#svg-icon-pdf"></use></svg>
+						Скачать презентацию компании
+						<span class="size"> - 20 мб.</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="remont-section">
+		<div class="container">
+			<div class="row">
+				<div class="section-title white col-xs-8">
+					<h2>Где проводится ремонт</h2>
+					<p>Ремонт тепловозов производится в локомотивном депо в г. Чайковский. База оснащена необходимым передовым оборудованием для ремонта любой сложности.</p>
+				</div>
+			</div>
+			<div class="block" data-aos="zoom-in-down">
+				<img src="img/remont-map.jpg" alt="" />
+				<h3>Местонахождение депо</h3>
+				<p>Пермский край , г. Чайковский, ул. Советская 1/4, строение 3</p>
+				<button class="btn btn-white geo-button scroll" data-scroll=".contacts-section">
+					<svg class="svg-icon-geo"><use xlink:href="#svg-icon-geo"></use></svg>
+					Смотреть на карте
+				</button>
+			</div>
+		</div>
+	</section>
+	<section class="equipment-section">
+		<div class="container">
+			<div class="section-title">
+				<h2>Какое оборудование мы используем</h2>
+			</div>
+			<div class="row">
+				<div class="col-xs-6">
+					<div class="item" data-aos="fade-left">
+						<div class="img" data-toggle="modal" data-target="#modal_4">
+							<img src="img/equipment/2665716.jpg" alt="" />
+						</div>
+						<h3>Мобильные домкраты УДС-160 для выкатки экипажной части из под тепловоза</h3>
+						<a href="#" data-toggle="modal" data-target="#modal_4">Подробнее</a>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="item" data-aos="fade-right">
+						<div class="img" data-toggle="modal" data-target="#modal_4">
+							<img src="img/equipment/2665716.jpg" alt="" />
+						</div>
+						<h3>Мобильные домкраты УДС-160 для выкатки экипажной части из под тепловоза</h3>
+						<a href="#" data-toggle="modal" data-target="#modal_4">Подробнее</a>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="item" data-aos="fade-left">
+						<div class="img" data-toggle="modal" data-target="#modal_4">
+							<img src="img/equipment/2665716.jpg" alt="" />
+						</div>
+						<h3>Мобильные домкраты УДС-160 для выкатки экипажной части из под тепловоза</h3>
+						<a href="#" data-toggle="modal" data-target="#modal_4">Подробнее</a>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="item" data-aos="fade-right">
+						<div class="img" data-toggle="modal" data-target="#modal_4">
+							<img src="img/equipment/2665716.jpg" alt="" />
+						</div>
+						<h3>Мобильные домкраты УДС-160 для выкатки экипажной части из под тепловоза</h3>
+						<a href="#" data-toggle="modal" data-target="#modal_4">Подробнее</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="about-photo-section">
+		<div class="container">
+			<div class="row">
+				<div class="item">
+					<div class="col-xs-6">
+						<div class="img" data-fancybox="about-photo-section1" href="img/about/img1.jpg">
+							<img src="img/about/img1.jpg" alt="" />
+							<p>Склад ТРК «ПРОГРЕСС», пл. 900 м2</p>
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<svg class="svg-icon-warehouse hvr-pop">
+							<use xlink:href="#svg-icon-warehouse"></use>
+						</svg> 
+						<h2>Наш склад железнодорожных запчастей</h2>
+						<div class="description">
+							<p>В ремонте мы используем <strong>только качественные и проверенные запасные части, имеющие соответствующие сертификаты</strong>. Все запчасти хранятся на складе на территории нашего депо. Благодаря системе штрихкодирования мы ведем точный учет запасных частей для ремонта и выбираем надежных поставщиков.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="col-xs-6">
+						<div class="img" data-fancybox="about-photo-section2" href="img/about/img2.jpg">
+							<img src="img/about/img2.jpg" alt="" />
+							<p>Склад ТРК «ПРОГРЕСС», пл. 900 м2</p>
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<svg class="svg-icon-truck hvr-pop">
+							<use xlink:href="#svg-icon-truck"></use>
+						</svg> 
+						<h2>Наш склад железнодорожных запчастей</h2>
+						<div class="description">
+							<p>Для проведения ремонтов на вашей территории мы используем собственный автотранспорт (Газель 2 шт, Lada Largus 2 шт).</p>
+							<p>Благодаря этому <strong>мы быстро реагируем на гарантийные случаи, оперативно доставляем зап.части и членов бригады к месту проведения ремонта.</strong></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="why-section">
+		<div class="container">
+			<div class="section-title">
+				<h2>Почему вам выгодно сотрудничать с нами</h2>
+			</div>
+			<div class="row">
+				<div class="col-xs-4">
+					<div class="item" data-aos="fade-left" data-aos-easing="ease-in-back">
+						<img class="hvr-pop" src="img/icons/piggy-icon.svg" alt="" />
+						<h3>Вы экономите на ремонте</h3>
+						<p>Мы оптимизируем свои расходы, не влияющие на качество ремонта, чтобы предложить вам лучшую цену.</p>
+					</div>
+				</div>
+				<div class="col-xs-4">
+					<div class="item" data-aos="fade-left" data-aos-easing="ease-in-back" data-aos-delay="300">
+						<img class="hvr-pop" src="img/icons/clock-icon.svg" alt="" />
+						<h3>Вы укладываетесь в график</h3>
+						<p>Благодаря большому штату специалистов и собственному складу запчастей мы гарантируем сжатые сроки работ.</p>
+					</div>
+				</div>
+				<div class="col-xs-4">
+					<div class="item" data-aos="fade-left" data-aos-easing="ease-in-back" data-aos-delay="600">
+						<img class="hvr-pop" src="img/icons/calendar-icon.svg" alt="" />
+						<h3>Вы платите с отсрочкой</h3>
+						<p>Вы сможете оплатить ремонт в течение 60 дней после его завершения. На стоимости ремонта отсрочка не отразится.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="callback-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<h2>Рассматриваете предложения от нескольких исполнителей?</h2>
+					<p>Позвольте нам предложить лучшую цену</p>
+				</div>
+				<div class="col-xs-5 col-xs-offset-1 form">
+					<p>Оставьте ваши данные — мы перезвоним вам в течение 15 минут</p>
+					<form action="/mail.php">
+						<input type="text" name="name" placeholder="Введите имя" required="required">
+						<input type="tel" name="tel" placeholder="Введите номер телефона" required="required">
+						<div class="politic">
+							Нажимая на кнопку «Узнать лучшую цену», Вы даёте согласие на <a href="#" data-toggle="modal" data-target="#modal_3">обработку Ваших персональных данных</a>
+						</div>
+						<button class="btn btn-blue" type="submit"><svg class="svg-icon-rub"><use xlink:href="#svg-icon-rub"></use></svg> Узнать лучшую цену</button>	
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="price-section">
+		<div class="container">
+			<div class="section-title">
+				<h2>Наши цены: почему они ниже, чем у конкурентов</h2>
+			</div>
+			<div class="row">
+				<div class="col-xs-4">
+					<div class="item">
+						<small>01</small>
+						<h3>Привлекаем аутсорсинговых специалистов</h3>
+						<p>Отдельные виды работ мы оплачиваем только в момент их выполнения, что позволяет нам синизить стоимость ремонта для вас.</p>
+					</div>
+				</div>
+				<div class="col-xs-4">
+					<div class="item">
+						<small>02</small>
+						<h3>Используем энергоемкое оборудование</h3>
+						<span>(перевозная реостатная станция, выездной обточный станок)</span>
+						<p>Эргономичная техника уменьшает себестоимость ремонтных работ.</p>
+					</div>
+				</div>
+				<div class="col-xs-4">
+					<div class="item">
+						<small>03</small>
+						<h3>Переходим на альтернативные источники энергии</h3>
+						<span>на внешних производственных площадках (освещение базы, склада и т.д.)</span>
+						<p>За счет итоговой экономии мы можем предлагать свои услуги по лучшим ценам.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="numbers-section">
+		<div class="container">
+			<div class="section-title white">
+				<h2>О нашей компетентности говорят цифры</h2>
+			</div>
+			<div class="row">
+				<div class="col-xs-3">
+					<div class="item" style="background-image: url(img/icons/rairoad-icon.svg);">
+						<h3>5 ЛЕТ</h3>
+						<p>уверенного развития</p>
+					</div>
+				</div>
+				<div class="col-xs-3">
+					<div class="item" style="background-image: url(img/icons/worker-cut-icon.svg);">
+						<h3>40 специалистов</h3>
+						<p>в нашем штате</p>
+					</div>
+				</div>
+				<div class="col-xs-3">
+					<div class="item" style="background-image: url(img/icons/repair-icon.svg);">
+						<h3>100+ ремонтов</h3>
+						<p>выполнили в 2017 году</p>
+					</div>
+				</div>
+				<div class="col-xs-3">
+					<div class="item" style="background-image: url(img/icons/growth-icon.svg);">
+						<h3>15-20%</h3>
+						<p>ежегодный темп роста компании</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="work-section">
+		<div class="container">
+			<div class="section-title">
+				<h2>Примеры выполненных работ</h2>
+			</div>
+			<div class="items owl-carousel">
+				<div class="item row">
+					<div class="col-xs-6">
+						<div class="img" data-fancybox="work-section" href="img/work/1.jpg">
+							<img src="img/work/1.jpg" alt="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<h3>Капитальный ремонт тележки ТЭМ-2</h3>
+						<small>Задача</small>
+						<p>Починить тележку тепловоза ТЭМ-2 для «Организация».</p>
+						<small>Решение</small>
+						<p>Провели такие-то и такие-то работы с использованием тех-то и тех-то инструментов. Заменили то-то и то-то.</p>
+						<small>Результат</small>
+						<p>Тепловоз был приведен в полную готовность и покинул депо через N дней. Стоимость ремонта составила Х.</p>
+					</div>
+				</div>
+				<div class="item row">
+					<div class="col-xs-6">
+						<div class="img" data-fancybox="work-section" href="img/work/1.jpg">
+							<img src="img/work/1.jpg" alt="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<h3>Капитальный ремонт тележки ТЭМ-2</h3>
+						<small>Задача</small>
+						<p>Починить тележку тепловоза ТЭМ-2 для «Организация».</p>
+						<small>Решение</small>
+						<p>Провели такие-то и такие-то работы с использованием тех-то и тех-то инструментов. Заменили то-то и то-то.</p>
+						<small>Результат</small>
+						<p>Тепловоз был приведен в полную готовность и покинул депо через N дней. Стоимость ремонта составила Х.</p>
+					</div>
+				</div>
+				<div class="item row">
+					<div class="col-xs-6">
+						<div class="img" data-fancybox="work-section" href="img/work/1.jpg">
+							<img src="img/work/1.jpg" alt="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<h3>Капитальный ремонт тележки ТЭМ-2</h3>
+						<small>Задача</small>
+						<p>Починить тележку тепловоза ТЭМ-2 для «Организация».</p>
+						<small>Решение</small>
+						<p>Провели такие-то и такие-то работы с использованием тех-то и тех-то инструментов. Заменили то-то и то-то.</p>
+						<small>Результат</small>
+						<p>Тепловоз был приведен в полную готовность и покинул депо через N дней. Стоимость ремонта составила Х.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="reviews-section">
+		<div class="container">
+			<div class="section-title">
+				<h2>Отзывы наших заказчиков</h2>
+			</div>
+			<div class="items owl-carousel">
+				<div class="item">
+					<p>ОАО «Чайковское ППЖТ»</p>
+					<div class="img" data-fancybox="reviews-section" href="img/reviews/1.jpg">
+						<img src="img/reviews/1.jpg" alt="" />
+					</div>
+				</div>
+				<div class="item">
+					<p>ПАО «Дорогобуж»</p>
+					<div class="img" data-fancybox="reviews-section" href="img/reviews/1.jpg">
+						<img src="img/reviews/1.jpg" alt="" />
+					</div>
+				</div>
+				<div class="item">
+					<p>ООО «Вагонное депо Балахонцы»</p>
+					<div class="img" data-fancybox="reviews-section" href="img/reviews/1.jpg">
+						<img src="img/reviews/1.jpg" alt="" />
+					</div>
+				</div>
+				<div class="item">
+					<p>ОАО «Чайковское ППЖТ»</p>
+					<div class="img" data-fancybox="reviews-section" href="img/reviews/1.jpg">
+						<img src="img/reviews/1.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="garant-section">
+		<div class="container">
+			<div class="section-title white">
+				<h2>Гарантии вашего спокойствия</h2>
+			</div>
+			<div class="row">
+				<div class="col-xs-6">
+					<div class="item" data-aos="fade-left">
+						<img src="img/icons/certificate-white-icon.svg" alt="" class="hvr-pop">
+						<h3>Сертификат страхования</h3>
+						<p>Сертификат на 50 000 000 имеется на случай, если «ТРК-ПРОГРЕСС» не сможет исполнить свои обязательства перед вами.</p>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="item" data-aos="fade-right">
+						<img src="img/icons/rheostatic-icon.svg" alt="" class="hvr-pop">
+						<h3>Реостатные испытания</h3>
+						<p>После завершения ремонта мы проводим испытания тепловоза при вашем доверенном лице.</p>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="item" data-aos="fade-left">
+						<img src="img/icons/medal-icon.svg" alt="" class="hvr-pop">
+						<h3>Гарантия на ремонт</h3>
+						<p>Все ремонтные работы подлежат обязательному гарантийному обслуживанию сроком 6 — 18 месяцев.</p>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="item" data-aos="fade-right">
+						<img src="img/icons/truck-whte-icon.svg" alt="" class="hvr-pop">
+						<h3>Быстрый выезд по гарантии</h3>
+						<p>В гарантийном случае на вашу территорию в течение 2х дней выедет бригада специалистов и устранит неисправность.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="certificates-section">
+		<div class="container">
+			<div class="section-title">
+				<h2>Сертификаты и разрешения</h2>
+			</div>
+			<div class="items owl-carousel">
+				<div class="item">
+					<p>Сертификат соответствия ДСЖТ </p>
+					<div class="img" data-fancybox="certificates-section" href="img/reviews/1.jpg">
+						<img src="img/reviews/1.jpg" alt="" />
+					</div>
+				</div>
+				<div class="item">
+					<p>Разрешение № СМ.Р. 03737-13</p>
+					<div class="img" data-fancybox="certificates-section" href="img/reviews/1.jpg">
+						<img src="img/reviews/1.jpg" alt="" />
+					</div>
+				</div>
+				<div class="item">
+					<p>Сертификат соответствия ДСЖТ</p>
+					<div class="img" data-fancybox="certificates-section" href="img/reviews/1.jpg">
+						<img src="img/reviews/1.jpg" alt="" />
+					</div>
+				</div>
+				<div class="item">
+					<p>Разрешение № СМ.Р. 03737-13</p>
+					<div class="img" data-fancybox="certificates-section" href="img/reviews/1.jpg">
+						<img src="img/reviews/1.jpg" alt="" />
+					</div>
+				</div>
+				<div class="item">
+					<p>ОАО «Чайковское ППЖТ»</p>
+					<div class="img" data-fancybox="certificates-section" href="img/reviews/1.jpg">
+						<img src="img/reviews/1.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="how-work-section">
+		<div class="container">
+			<div class="section-title">
+				<h2>Как мы работаем</h2>
+			</div>
+			<div class="row">
+				<div class="col-xs-6">
+					<div class="item">
+						<small>01</small>
+						<h3>Заключаем договор</h3>
+						<p>Фиксируем условия оплаты, гарантии, нормы сменяемости зап.частей и т.д. Вы оплачиваете ж/д тариф и услуги проводников.</p>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="item">
+						<small>02</small>
+						<h3>Принимаем тепловоз в депо</h3>
+						<p>При приеме подписываем акты с описанием узлов и агрегатов.</p>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="item">
+						<small>03</small>
+						<h3>Выполняем ремонтные работы</h3>
+						<p>После ремонта проводим реостатные испытания <strong>в присутствии вашего представителя.</strong></p>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="item">
+						<small>04</small>
+						<h3>Сдаем тепловоз вашему представителю</h3>
+						<p>Подписываем акты выдачи, технического состояния и ввода в эксплуатацию с указанием условного номера клеймения ООО ТРК «ПРОГРЕСС» для выхода на пути ОАО «РЖД»</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="contacts-section" data-aos="fade-up">
+		<div class="col-xs-7 map">
+			<script async defer src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3851e14dc15005c6cd4a48e1c269e43dc5c1d37afe77ec42edc5e7fce0865570&amp;width=100%25&amp;height=605&amp;lang=ru_RU&amp;scroll=true"></script>
+		</div>
+		<div class="col-xs-5 contacts">
+			<div class="section-title white">
+				<h2>Как связаться и где вы находитесь</h2>
+			</div>
+			<small>ГОЛОВНОЙ ОФИС</small>
+			<p>г. Ижевск, ул. Чугуевского, 9, офис 5.</p>
+			<p>7 (3412) 249-599</p>
+
+			<small>ФИЛИАЛ В ЧАЙКОВСКОМ</small>
+			<p>г. Чайковский, Советская 1/4, строение 3</p>
+			<p>7 (3412) 249-599</p>
+			<div class="question">
+				<h3>У Вас есть вопрос?</h3>
+				<p>Задайте его сейчас</p>
+				<button class="btn btn-white" data-toggle="modal" data-target="#modal_2">Задать вопрос</button>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="inner">
+				<div class="row">
+					<div class="col-xs-7">
+						<h2>ООО Тепловозно-ремонтная компания «ПРОГРЕСС»</h2>
+						<p><a target="_blank" href="http://trkprogress.ru">trkprogress.ru</a></p>
+					</div>
+					<div class="col-xs-5">
+						
+						<button class="btn btn-blue callback" data-toggle="modal" data-target="#modal_1">
+							<svg class="svg-icon-tel">
+								<use xlink:href="#svg-icon-tel"></use>
+							</svg>  
+							Заказать звонок
+						</button>
+						<div class="contact">
+							<p><a class="tel" href="tel:+73412249599">+ 7 (3412) 249-599</a></p>
+							<p><a class="email" href="mailto:remont@trkprogress.ru">remont@trkprogress.ru</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="container">
+				<p><a href="#" data-toggle="modal" data-target="#modal_3">Политика обработки персональных данных</a></p>
+				<p class="adelex">Разработка и продвижение сайта – <a target="_blank" href="http://adelex.ru/?utm_source=*.trkprogress.ru">Adelex</a></p>
+			</div>
+		</div>
+	</footer>
+	<section class="modal" id="modal_1" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<svg data-dismiss="modal" aria-label="Close" class="close svg-icon-close"><use xlink:href="#svg-icon-close"></use></svg>
+					<h2 class="modal-title">Оставьте заявку</h2>
+					<p class="info">И мы свяжемся с вами в течение 30 минут, чтобы обсудить детали заказа</p>
+					<form action="mail.php" method="post">
+						<input type="hidden" name="form" value="0">
+						<input type="text" name="name" placeholder="Имя *" required="">
+						<input type="text" name="emailto" placeholder="Электронная почта *" required="">
+						<input type="text" name="tel" placeholder="Номер телефона">
+						<div class="politic">
+							Нажимая на кнопку «Оставить заявку», Вы даёте согласие на <a href="#" data-toggle="modal" data-target="#modal_3">обработку Ваших персональных данных</a>
+						</div>
+						<button class="btn btn-blue" type="submit"><svg class="svg-icon-mail"><use xlink:href="#svg-icon-mail"></use></svg> Оставить заявку</button>	
+						<p class="info"><svg class="svg-icon-lock"><use xlink:href="#svg-icon-lock"></use></svg> Гарантируем безопасность ваших данных</p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="modal" id="modal_2" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<svg data-dismiss="modal" aria-label="Close" class="close svg-icon-close"><use xlink:href="#svg-icon-close"></use></svg>
+					<h2 class="modal-title">Отправьте свой вопрос</h2>
+					<p>Мы свяжемся с вами в течение 30 минут и ответим</p>
+					<form action="mail.php" method="post">
+						<input type="hidden" name="form" value="1">
+						<input type="text" name="name" placeholder="Введите имя" required="">
+						<input type="text" name="emailto" placeholder="Введите e-mail" required="">
+						<input type="text" name="tel" placeholder="Введите номер телефона">
+						<textarea name="text" placeholder="Введите вопрос"></textarea>
+						<div class="politic">
+							Нажимая на кнопку «Задать вопрос», Вы даёте согласие на <a href="#" data-toggle="modal" data-target="#modal_3">обработку Ваших персональных данных</a>
+						</div>
+						<button class="btn btn-blue" type="submit"><svg class="svg-icon-mail"><use xlink:href="#svg-icon-mail"></use></svg> Оставить заявку</button>	
+						<p class="info"><svg class="svg-icon-lock"><use xlink:href="#svg-icon-lock"></use></svg> Гарантируем безопасность ваших данных</p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="modal" id="modal_3" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<svg data-dismiss="modal" aria-label="Close" class="close svg-icon-close"><use xlink:href="#svg-icon-close"></use></svg>
+					<h2 class="modal-title">Политика конфиденциальности</h2>
+					<p>Данная Политика Конфиденциальности применима ко всей личной информации и полученными или использованными данными на настоящем сайте и всех сайтах, на которые может ссылаться настоящий сайт.</p>
+					<h3>Сбор вашей личной информации</h3>
+					<p>Мы храним и обрабатываем предоставленную Вами информацию с тем уровнем достаточной защиты, которая представляется достаточной и доступной. Мы не передает предоставленную информацию третьим лицами за исключением случаев, предусмотренных законодательством Российской Федерации.</p>
+					<p>Мы можем попросить Вас предоставить контактную информацию, такую, как адрес электронной почты, ФИО, номер телефона, ссылки на аккаунты в социальных сетях или прочих контактов, необходимых для осуществления наших услуг.</p>
+					<p>Отказ от предоставления данной информации является достаточным условием для отказа или прекращения оказания всех или части наших услуг. Для Вашего удобства эти данные могут быть получены в автоматическом режиме с уведомлением Вас перед отправкой запроса на его получение.</p>
+					<p>Мы можем объединять информацию, предоставленную Вами на нашем сайте, с другой информацией, полученной нами от Вас вне рамок сайта или от сторонних лиц для более эффективной работы нашего сайта, услуг или наших предложений.</p>
+					<p>Если Вы предоставляете нам свою информацию, Вы имеете право, предварительно уведомив нас, проверить, изменить, исправить или удалить эту информацию.</p>
+					<p>Мы оставляем за собой право выбора способа и метода проверки предоставленной Вами информации. Проверка производится в рамках действующего законодательства той страны, в пределах которой Вы воспользовались нашими услугами.</p>
+					<p>Заполняя наши электронные формы, анкеты, передавая нам информацию иными способами, Вы соглашаетесь с нашей политикой конфиденциальности.</p>
+					<h3>Использование вашей личной информации</h3>
+					<p>Мы используем Вашу личную информацию исключительно для предоставления Вам услуг и сервисов, указанных на нашем сайте.</p>
+					<p>В частности, мы используем Вашу информацию, чтобы связаться с вами удобным для вас способом, для предоставления услуг и поддержки, передачи полезных материалов, технической информации и т.д.</p>
+					<p>Мы также можем связаться с Вами для предоставления информации о товарах, услугах, рекламе, конкурсах и других мероприятиях или предложениях представляющих для Вас интерес. Вы имеете право решить и уведомить нас, хотите ли вы получать такую информацию, с помощью запроса по электронной почте или по иным каналам связи, указанных на нашем сайте.</p>
+					<h3>Передача вашей личной информации</h3>
+					<p>Мы обязуемся не передавать вашу личную информацию другим лицам за исключением случаев, когда Вы запросите товары или услуги, выполнение которых требует обращение к нашим партнерам или подрядчикам, с вашим предварительным согласием на передачу такой информации.</p>
+					<p>Мы сотрудничаем со сторонними компаниями для предоставления услуг и поставки товаров, услуг и решений для наших клиентов; наши партнеры, подрядчики и поставщики услуг берут обязательства хранить конфиденциальность информации, полученной от нашего имени и не использовать ее для каких-либо иных целей, кроме предоставления услуг для наших клиентов.</p>
+					<p>Мы обязуемся не передавать Вашу личную информацию, предоставленную Вами, сторонним лицам, за исключением: вашего согласия; ответа на официальный и юридически правильно оформленный запрос правительственных органов; следования нормам законодательства, акта, повестки в суд или судебного решения; помощи в предотвращении мошенничества, защите прав и имущества нашей компании; защиты личной безопасности или имущества наших сотрудников, пользователей или общественности; обработки Вашего заказа или запроса, или обработки нашего счета-фактуры; передачи лицам или компаниям, которых мы нанимаем для выполнения внутренних операций компании.</p>
+					<h3>Безопасность вашей личной информации</h3>
+					<p>Мы гарантируем защиту информации, которую Вы нам предоставляете. Хотя мы не может гарантировать отсутствие попыток несанкционированного доступа, Вы все равно можете быть уверены, что мы прилагаем максимум усилий для защиты Вашей личной информации и предотвращения несанкционированного доступа к ней с помощью соответствующих технологий и внутренних процедур.</p>
+					<h3>Согласие на обработку данных</h3>
+					<p>Предоставляя любые личные данные на нашем сайте, все наши клиенты четко понимают, что это необходимо для должного уровня обеспечения нами заявленных услуг и/или сервиса и безусловно соглашаются на сбор и обработку такой информации в рамках данной Политики Конфиденциальности.</p>
+					<p>Вы имеете право в любой момент отказаться от наших услуг и удалить ваши данные из нашей базы &mdash; однако мы оставляем за собой право хранить введенную вами контактную и прочую информацию в архивах для сбора статистики и улучшения качества наших сервисов и услуг.</p>
+					<h3>Изменения в политике конфиденциальности</h3>
+					<p>Условия данной Политики конфиденциальности являются правилом для сбора и использования любой собранной на настоящем сайте и страницах настоящего сайта информации.</p>
+					<p>Мы оставляем за собой право в любое время изменять или обновлять условия данной Политики конфиденциальности. В случае изменения каких-либо материалов, мы публикуем таковые изменения и обновляем номер версии в документе. Изменения в Политике конфиденциальности вступают в силу с момента публикации на этом сайте, а Ваше дальнейшее пользование нашими услугами и сервисами означает Ваше принятие и согласие на эти изменения.</p>
+					<p>Если у Вас есть комментарии или вопросы о нашей Политике конфиденциальности, пожалуйста, присылайте Ваши замечания или предложения по электронной почте или по другим каналам связи, указанных на настоящем сайте.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="modal" id="modal_4" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<svg data-dismiss="modal" aria-label="Close" class="close svg-icon-close"><use xlink:href="#svg-icon-close"></use></svg>
+					<h2 class="modal-title">КР-2</h2>
+					<p>
+						При капитальном ремонте КР-2 выполняются все работы, предусмотренные капитальным ремонтом КР-1, и дополнительно:
+					</p>
+					<p><strong>По дизелю и вспомогательному оборудованию:</strong></p>
+					<ol>
+						<li>ремонт топливного бака;</li>
+						<li>замена глушителей дизеля. </li>
+					</ol>
+					<p><strong>По электрооборудованию:</strong></p>
+					<ol>
+						<li>замена контрольно-измерительных манометров</li>
+						<li>замена автоматических выключателей, тумблеров, переключателей типа УП и кнопок управления КУ.</li>
+						<li>полная замена электрической проводки высоковольтной и низковольтных цепей тепловоза.</li>
+					</ol>
+					<p><strong>По экипажной части:</strong></p>
+					<ol>
+						<li>замена внутренней обшивки кабины машиниста с заменой теплоизоляции, а при необходимости — деревянных деталей капота, окон, дверей; окраску внутренних поверхностей наружной обшивы; сборку и окраску внутренней обшивы.</li>
+					</ol>
+					<p><strong>По оборудованию общего назначения:</strong></p> 
+					<ol>
+						<li>Разборка и очистка воздухопроводов с заменой негодных резервуаров,
+						труб и соединений.</li>
+						<li>Замена резиновых амортизаторов кабины машиниста тепловоза</li>
+					</ol>
+					<button data-dismiss="modal" aria-label="Close" class="btn btn-blue callback" data-toggle="modal" data-target="#modal_1"><svg class="svg-icon-mail"><use xlink:href="#svg-icon-mail"></use></svg> Оставить заявку</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="hidden">
+		<!-- about-photo-section -->
+		<a data-fancybox="about-photo-section1" href="img/about/img1.jpg"></a>
+		<a data-fancybox="about-photo-section1" href="img/about/img1.jpg"></a>
+		<a data-fancybox="about-photo-section1" href="img/about/img1.jpg"></a>
+
+		<a data-fancybox="about-photo-section2" href="img/about/img2.jpg"></a>
+		<a data-fancybox="about-photo-section2" href="img/about/img2.jpg"></a>
+		<a data-fancybox="about-photo-section2" href="img/about/img2.jpg"></a>
+
+	</div>
+	<script src="js/build.min.js"></script>
+</body>
+</html>

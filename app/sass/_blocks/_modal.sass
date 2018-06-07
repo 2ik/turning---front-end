@@ -1,0 +1,63 @@
+.modal-body
+  h2
+    color: $cg
+    font-size: 30px
+    margin-bottom: 10px
+  p
+    font-size: 16px
+    color: $cg
+  button.callback
+    font-size: 13px
+    font-family: $fontCustom
+    padding-left: 28px
+    padding-right: 20px
+    width: 100%
+    max-width: 200px
+    margin-top: 25px
+  form
+    input, textarea
+      margin-bottom: 15px
+    margin-top: 20px
+    button[type=submit]
+      width: 100%
+      max-width: 200px
+      margin-top: 12px
+      font-family: $fontCustom
+      font-size: 13px
+      padding-left: 28px
+      padding-right: 20px
+    p.info
+      color: rgba(51, 51, 51, 0.4)
+      margin: 22px 0 0
+      font-size: 16px
+  position: relative
+  padding: 60px
+
+.modal-dialog
+  width: 480px
+  margin: 30px auto
+
+.modal-lg
+  width: 780px
+
+.close
+  float: right
+  font-size: 17px
+  opacity: 1
+  margin: -27px -17px
+  outline: none
+  cursor: pointer
+  transition: all .4s
+  &:focus, &:hover
+    opacity: 0.6
+
+.modal-content
+  position: relative
+  background-color: #fff
+  -webkit-background-clip: padding-box
+  background-clip: padding-box
+  border: 0
+  border-radius: 0
+  outline: 0
+  -webkit-box-shadow: none
+  box-shadow: none  

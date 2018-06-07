@@ -1,0 +1,204 @@
+@import "_mixins/plsh"
+@import "_mixins/owl"
+@import "_mixins/gallery"
+
+h1,h2,h3,h4,h5
+  font-family: $fontCustom
+  font-weight: bold
+
+a
+  transition: color .3s, background .3s
+  color: #005dc1
+  &:hover,&:focus
+    color: #005dc1
+
+input
+  width: 100%
+  height: 50px
+  padding: 0px 15px
+  border: 1px solid #eef3f6
+  background-color: #eef3f6
+  outline: none
+
+textarea
+  @extend input
+  height: 120px
+  padding: 15px
+
+@include placeholder()
+  color: #909090
+  text-indent: 0px
+  transition: text-indent 0.5s ease
+
+@include placeholderFocus()
+  color: #909090
+  text-indent: -500px
+  transition: text-indent 0.5s ease
+
+/* title */
+
+.section-title
+  margin: 50px 0
+  h2
+    font-size: 30px
+    color: #343434
+    line-height: 45px
+  p
+    font-size: 16px
+    color: #343434
+  &.white
+    h2,p
+      color: #fff
+
+/* buttons */
+
+.btn, button, a
+  outline: 0
+  outline-offset: 0
+  &.active
+    &.focus, &:focus
+      outline: 0
+      outline-offset: 0
+  &.focus
+    outline: 0
+    outline-offset: 0
+  &:active
+    &.focus, &:focus
+      outline: 0
+      outline-offset: 0
+  &:focus
+    outline: 0
+    outline-offset: 0
+
+.btn-white
+  background-color: #fff
+  font-family: $fontCustom
+  font-weight: bold
+  border-radius: 0
+  font-size: 13px
+  height: 60px
+  padding: 6px 25px
+  color: $cb
+  &:hover, &:active, &:focus
+    background-color: #f5f5f5
+    color: $cb
+
+.btn-blue
+  background-color: $cb
+  font-family: $fontCustom
+  font-weight: bold
+  border-radius: 0
+  font-size: 16px
+  height: 60px
+  padding: 6px 0
+  color: #fff
+  transition: all .4s
+  &:hover
+    background-color: #306dd1
+    color: #fff
+  &:active, &:focus
+    background-color: #0052af
+    color: #fff
+  i
+    display: inline-block
+    margin-right: 8px
+
+/* list */
+ol
+  padding: 0 1px 15px
+  margin: 0
+  counter-reset: item
+  list-style: none
+  li
+    counter-increment: item
+    &:before
+      margin-right: 3px;
+      content: counter(item) ".";
+      color: #005dbd;
+      display: inline-block;
+      font-weight: bold;    
+
+  
+/* svg icons */
+
+[class^="svg-icon-"], [class*=" svg-icon-"]
+  display: inline-block
+  width: 1em
+  height: 1em
+  fill: currentColor
+  vertical-align: sub
+
+.svg-icon-tel
+  width: 11px
+  height: 17px
+  margin-right: 10px
+
+.svg-icon-pdf
+  width: 33px
+  height: 24px
+  float: left
+  margin-right: 12px
+
+.svg-icon-geo
+  margin-right: 5px
+  height: 15px
+
+.svg-icon-lock
+  height: 20px
+  margin-right: 4px
+
+.svg-icon-mail
+  width: 26px
+  height: 18px
+  float: left
+
+.svg-icon-warehouse
+  width: 41px
+  height: 36px
+  
+.svg-icon-truck
+  width: 54px
+  height: 32px
+
+.svg-icon-rub
+  width: 10px
+  height: 15px
+
+.svg-icon-ar-left
+  width: 11px
+  height: 19px
+
+.svg-icon-ar-right
+  width: 11px
+  height: 19px
+
+/* other */
+
+.politic
+    font-size: 11px
+    color: $cb
+    margin-bottom: 6px
+    a
+      text-decoration: underline
+
+
+/* hover effect */
+
+@-webkit-keyframes hvr-pop
+  50%
+    transform: scale(1.2)
+@keyframes hvr-pop
+  50%
+    transform: scale(1.2)
+.hvr-pop
+  display: inline-block
+  vertical-align: middle
+  -webkit-transform: perspective(1px) translateZ(0)
+  transform: perspective(1px) translateZ(0)
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+
+.hvr-pop:hover, .hvr-pop:focus, .hvr-pop:active
+  animation-name: hvr-pop
+  animation-duration: 0.3s
+  animation-timing-function: linear
+  animation-iteration-count: 1

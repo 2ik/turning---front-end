@@ -1,0 +1,39 @@
+@mixin owl()
+	.owl-nav
+		position: absolute
+		top: 41%
+		left: 0
+		width: 100%
+		.owl-prev, .owl-next
+			background-color: rgba(255, 255, 255, 0.702)
+			width: 50px
+			height: 80px
+		.owl-prev
+			position: absolute
+			left: -50px
+		.owl-next
+			position: absolute
+			right: -50px
+	.owl-stage-outer
+		margin-bottom: 40px;
+	.owl-dots
+		text-align: center
+		-webkit-tap-highlight-color: transparent
+		position: absolute
+		left: 0
+		bottom: -50px
+		right: 0
+		.owl-dot
+			display: inline-block
+			zoom: 1
+			span
+				width: 10px
+				height: 10px
+				margin: 5px 14px
+				border: 2px solid #005dc1
+				display: block
+				-webkit-backface-visibility: visible
+				transition: opacity 200ms ease
+				border-radius: 0
+			&.active span
+				background-color: #005dc1

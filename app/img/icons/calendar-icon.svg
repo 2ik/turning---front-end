@@ -1,0 +1,72 @@
+<svg id="calendar-icon" xmlns="http://www.w3.org/2000/svg" width="62" height="66.5" viewBox="0 0 62 66.5">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        fill: #ccdff2;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-2, .cls-4 {
+        stroke: #005dbd;
+        stroke-width: 3px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #005dbd;
+      }
+
+      .cls-4 {
+        stroke-linecap: round;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Rounded_Rectangle_809" data-name="Rounded Rectangle 809" class="cls-1" d="M5.5,5h51a4,4,0,0,1,4,4V52a13,13,0,0,1-13,13H5.5a4,4,0,0,1-4-4V9A4,4,0,0,1,5.5,5Z"/>
+  <path id="Rounded_Rectangle_809-2" data-name="Rounded Rectangle 809" class="cls-2" d="M5.5,5h51a4,4,0,0,1,4,4V52a13,13,0,0,1-13,13H5.5a4,4,0,0,1-4-4V9A4,4,0,0,1,5.5,5Z"/>
+  <rect id="Rounded_Rectangle_810" data-name="Rounded Rectangle 810" class="cls-3" x="13.5" width="3" height="12" rx="1.5" ry="1.5"/>
+  <rect id="Rounded_Rectangle_810-2" data-name="Rounded Rectangle 810" class="cls-3" x="44.5" width="3" height="12" rx="1.5" ry="1.5"/>
+  <path class="cls-4" d="M1183.87,5693h53.26" transform="translate(-1179.5 -5674)"/>
+  <g>
+    <rect id="Rounded_Rectangle_813" data-name="Rounded Rectangle 813" class="cls-3" x="22.5" y="27" width="5" height="5" rx="2" ry="2"/>
+    <rect id="Rounded_Rectangle_813-2" data-name="Rounded Rectangle 813" class="cls-3" x="34.5" y="27" width="5" height="5" rx="2" ry="2"/>
+    <rect id="Rounded_Rectangle_813-3" data-name="Rounded Rectangle 813" class="cls-3" x="46.5" y="27" width="5" height="5" rx="2" ry="2"/>
+    <rect id="Rounded_Rectangle_813-4" data-name="Rounded Rectangle 813" class="cls-3" x="22.5" y="39" width="5" height="5" rx="2" ry="2"/>
+    <rect id="Rounded_Rectangle_813-5" data-name="Rounded Rectangle 813" class="cls-3" x="11.5" y="39" width="5" height="5" rx="2" ry="2"/>
+    <rect id="Rounded_Rectangle_813-6" data-name="Rounded Rectangle 813" class="cls-3" x="34.5" y="39" width="5" height="5" rx="2" ry="2"/>
+    <rect id="Rounded_Rectangle_813-7" data-name="Rounded Rectangle 813" class="cls-3" x="22.5" y="50" width="5" height="5" rx="2" ry="2"/>
+    <rect id="Rounded_Rectangle_813-8" data-name="Rounded Rectangle 813" class="cls-3" x="11.5" y="50" width="5" height="5" rx="2" ry="2"/>
+    <rect id="Rounded_Rectangle_813-9" data-name="Rounded Rectangle 813" class="cls-3" x="34.5" y="50" width="5" height="5" rx="2" ry="2"/>
+    <rect id="Rounded_Rectangle_813-10" data-name="Rounded Rectangle 813" class="cls-3" x="46.5" y="39" width="5" height="5" rx="2" ry="2"/>
+  </g>
+</svg>
